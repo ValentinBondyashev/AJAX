@@ -1,0 +1,137 @@
+/*common styles--start*/
+body{
+    background: #eef7ff;
+    font-family: 'Cabin', sans-serif;
+}
+
+.wrap{
+    margin: 100px
+}
+
+.bold{
+    font-weight: bold;
+    margin-right: 8px;
+}
+/*common styles--end*/
+
+/*Content--start*/
+.list-tracks{
+    width: 100%;
+    padding: 0;
+}
+
+.list-tracks li{
+   list-style: none;
+}
+
+.list-tracks-item{
+    list-style: none;
+    background:#78C8DA;
+    padding: 40px;
+    flex-direction: column;
+}
+
+.list-tracks-item:nth-child(2n+1){
+    background:#ccdff0;
+}
+
+.list-tracks-item:nth-child(2n){
+    background:#eef7ff;
+}
+
+.main-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-block div{
+    width: 20%;
+}
+
+.main-block div:first-child{
+    width: 14%;
+}
+
+.main-block div:nth-child(2){
+    width: 14%;
+}
+
+.main-block div:last-child{
+    width: 4%;
+}
+/*Content--end*/
+
+/*PLUSorMinus---start*/
+.plus_line{
+    position: absolute;
+    display: block;
+    width: 80%;
+    left: 10%;
+    height: 5px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.plus_line-horizontal{
+    transition: all ease 0.5s;
+    transform: rotate(90deg);
+}
+
+.main-block.active .plus_line-horizontal{
+    transition: all ease 0.5s;
+    transform: rotate(180deg);
+}
+
+.plus{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+/*PLUSorMinus---end*/
+
+/*SEARCH---start*/
+.search{
+    display: flex;
+    justify-content: center;
+}
+
+.search-form{
+    display: flex;
+    justify-content: center;
+}
+.search-track{
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 10px;
+    border: 2px solid gray;
+}
+
+.search-but{
+    top: 1px;
+    left: 126px;
+    position: relative;
+    height: 32px;
+    width: 60px;
+    border: 1px solid gray;
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+input, button {
+    outline:none;
+}
+
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.fa, .fas {
+    margin-left: 8px;
+}
+/*SEARCH---end*/
+
